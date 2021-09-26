@@ -1,0 +1,22 @@
+<div>
+    <div class="botoesCentrais" >
+        <div>
+            <h2>Me indica aê</h2>
+            <input type="button" value="Filmes" (click)="meTrazFilme()">
+            <input type="button" value="Séries" (click)="meTrazSerie()">
+
+        </div>
+    </div>
+    <h2>Filmes Populares</h2>
+    <div class="filmes" >
+        <div *ngFor="let filme of filmes; index as i;">
+            <img src="{{'https://image.tmdb.org/t/p/w342/' + filme.poster_path}}" alt="">
+            <p>{{filme.name || filme.title}}</p>
+            <p>{{filme.release_date || filme.first_air_date | date: 'mediumDate': '': 'pt_BR'}}</p>
+            <div>
+                <input type="checkbox" name="" id="">já assisti
+                <input type="checkbox" name="" id="">favoritar
+            </div>
+        </div>
+    </div>
+</div>

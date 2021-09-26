@@ -1,0 +1,10 @@
+.filmes{
+    display: flex; 
+    flex-direction:row;
+    gap: 40px;
+}
+.botoesCentrais{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
