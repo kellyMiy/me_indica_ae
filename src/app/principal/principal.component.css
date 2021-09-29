@@ -1,9 +1,48 @@
-.principal{
-display: flex;
-align-content: space-between;
+.principal {
+    width: 90%;
+    display: inline-block;
 }
-.sofaMovie{
- width: 489px;
-height: 350px;
-left: 380px;
+
+.sofaMovie {
+    height: 350px;
+}
+
+.txt {
+    width: 45%;
+    display: inline;
+    float: left;
+    margin-top: 5%;
+}
+
+.img {
+    width: 40%;
+    display: inline;
+    float: right;
+
+}
+
+input[type=button] {
+    color: #FFF;
+    background-color: #F36B7F;
+    border: none;
+    height: 40px;
+    line-height: 30px;
+    padding: 0 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 30px;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+input[type=button]:hover {
+    transform: scale(1.07);
+}
+p{
+    margin-bottom: 40px;
+}
+h1{
+    font-family: 'Saira Condensed', sans-serif;
+}
+p{
+    font-family: 'Saira Condensed', sans-serif;
 }

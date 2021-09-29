@@ -8,28 +8,39 @@ import { FilmesService } from '../services/filmes.service';
   styleUrls: ['./filmes.component.css']
 })
 export class FilmesComponent implements OnInit {
-
-  constructor(private filmesService: FilmesService ) {
-    filmesService.getFilmesAsObservable().subscribe((dados)=>{
-      this.filmes = dados;
-      console.log("seila", dados);
-    });
-   }
-
+  //ATRIBUTOS
+  inicializado = false;
   filmes: Result[]
+  page = 0
 
+  //CONSTRUTOR
+  constructor(private filmesService: FilmesService) {
+    filmesService.getFilmesAsObservable().subscribe((dados) => {
+      this.filmes = dados;
+      if (this.inicializado) {
+        this.scrollToBottom()
+      }
+      console.log("seila", dados);
+      this.inicializado = true;
+
+    });
+  }
+ //EVENTO
   ngOnInit(): void {
     this.filmesService.getFilmeESerieAleatorio();
-    
-  }
-    page = 0
-  meTrazFilme(){
-    this.filmesService.getFilmesESeries(3, MediaType.Movie, this.page++);
-  }
-  meTrazSerie(){
-    this.filmesService.getFilmesESeries(3, MediaType.Tv, this.page++);
-  }
 
+  }
+  meTrazFilme() {
+    this.filmesService.getFilmesESeries(3, MediaType.Movie, ++this.page);
+  }
+  meTrazSerie() {
+    this.filmesService.getFilmesESeries(3, MediaType.Tv, ++this.page);
+  }
+  
+  private scrollToBottom() {
+    const elmnts = document.getElementById("elmnts");
+    elmnts.scrollIntoView(false);
+  }
 }
 
 

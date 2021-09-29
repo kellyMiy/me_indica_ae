@@ -1,20 +1,20 @@
 <div>
     <div class="botoesCentrais" >
         <div>
-            <h2>Me indica aê</h2>
+            <h1 >Me indica aê</h1>
             <input type="button" value="Filmes" (click)="meTrazFilme()">
             <input type="button" value="Séries" (click)="meTrazSerie()">
 
         </div>
     </div>
-    <h2>Filmes Populares</h2>
-    <div class="filmes" >
+    <h1>Filmes Populares</h1>
+    <div class="filmes" id="elmnts">
         <div *ngFor="let filme of filmes; index as i;">
-            <img src="{{'https://image.tmdb.org/t/p/w342/' + filme.poster_path}}" alt="">
-            <p>{{filme.name || filme.title}}</p>
+            <img class="imgPoster" src="{{'https://image.tmdb.org/t/p/w342/' + filme.poster_path}}" alt="">
+            <h3>{{filme.name || filme.title}}</h3>
             <p>{{filme.release_date || filme.first_air_date | date: 'mediumDate': '': 'pt_BR'}}</p>
-            <div>
-                <input type="checkbox" name="" id="">já assisti
+            <div class="checkbox">
+                <input  type="checkbox" name="" id="">já assisti
                 <input type="checkbox" name="" id="">favoritar
             </div>
         </div>

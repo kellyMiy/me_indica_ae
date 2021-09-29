@@ -1,10 +1,40 @@
-.filmes{
-    display: flex; 
-    flex-direction:row;
+.filmes {
+    display: flex;
+    flex-direction: row;
     gap: 40px;
 }
-.botoesCentrais{
+
+.botoesCentrais {
     display: flex;
     justify-content: center;
     margin-bottom: 35px;
+    text-align: center;
+}
+
+input[type=button] {
+    color: #F36B7F;
+    background-color: white;
+    border: none;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+input[type=button]:hover {
+    transform: scale(1.07);
+}
+
+h1,h3,p,.checkbox {
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+
+
+.imgPoster {
+    border-radius: 10px;
+    height: 513px;
 }

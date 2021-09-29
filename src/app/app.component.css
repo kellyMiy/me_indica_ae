@@ -19,38 +19,40 @@
      float: left;
      padding: 10px;
      background-color: #F36B7F;
+     font-family: 'Saira Condensed', sans-serif;
 }
 .menu>ul>li>a:hover {
-    font-size: 25px;
+    font-size: 18px;
 }
-.custom-shape-divider-bottom-1632187860 {
+.custom-shape-divider-bottom-1632878508 {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
-    transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1632187860 svg {
+.custom-shape-divider-bottom-1632878508 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 140px;
-    transform: rotateY(180deg);
+    height: 41px;
 }
 
-.custom-shape-divider-bottom-1632187860 .shape-fill {
+.custom-shape-divider-bottom-1632878508 .shape-fill {
     fill: #F36B7F;
 }
+
+
 section{
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 400px;
-    padding: 100px 20vw;
+    min-height: 300px;
+    padding: 20px 5vw;
+    padding-bottom: 80px;
 }
 .vermelho{
      background: #F36B7F;
@@ -58,6 +60,25 @@ section{
 .branco{
     background: white;
 }
+tudo{
+    width: 100%;
+}
+.custom-shape-divider-bottom-1632878107 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
 
+.custom-shape-divider-bottom-1632878107 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 41px;
+}
 
-
+.custom-shape-divider-bottom-1632878107 .shape-fill {
+    fill: #FFFFFF;
+}
