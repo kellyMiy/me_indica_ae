@@ -36,6 +36,7 @@ input[type=button] {
 
 input[type=button]:hover {
     transform: scale(1.07);
+    color: #f0fff0;
 }
 p{
     margin-bottom: 40px;

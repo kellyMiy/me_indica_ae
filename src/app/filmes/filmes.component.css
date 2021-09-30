@@ -13,7 +13,7 @@
 
 input[type=button] {
     color: #F36B7F;
-    background-color: white;
+    background-color: f0fff0;
     border: none;
     height: 30px;
     line-height: 30px;
@@ -31,8 +31,6 @@ input[type=button]:hover {
 h1,h3,p,.checkbox {
     font-family: 'Saira Condensed', sans-serif;
 }
-
-
 
 .imgPoster {
     border-radius: 10px;
