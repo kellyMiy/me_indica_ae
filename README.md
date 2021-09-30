@@ -3,8 +3,8 @@
 Projeto de indicação de filmes em construção.
 
 ## Funcionalidades:
-Botão para indicação de filmes e series aleatórios -> implementado   
-Botões de filtro para filmes e series -> implementado   
+Botão para indicação de filmes e séries aleatórios -> implementado   
+Botões de filtro para filmes e séries -> implementado   
 Barra de menu indicando para outra rota -> implementado   
 Checkbox para favoritar ou descartar -> não implementado   
 
@@ -14,7 +14,7 @@ https://developers.themoviedb.org/3/getting-started/introduction
 
 ### Para subir o projeto
 
-Entrar na pasta app e execupar o comando "ng serve" no terminal.
+Entrar na pasta app e executar o comando "ng serve" no terminal.
 
 
 
